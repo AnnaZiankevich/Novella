@@ -1,0 +1,229 @@
+@font-face {
+  font-family: Golos;
+  src: url("/assets/fonts/GolosText-Regular.ttf");
+}
+@font-face {
+  font-family: Druk;
+  src: url("/assets/fonts/Druk Wide Bold.ttf");
+}
+/******************************************************MAIN*******************************************************************/
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #030303;
+}
+
+ul {
+  list-style: none;
+  text-decoration: none;
+  padding: 0;
+}
+
+.about-us-container, .content-container__start-block {
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+}
+
+.content-item {
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 2%;
+}
+
+.content-block {
+  margin-top: 5%;
+  width: 40%;
+}
+
+.content-text {
+  margin-bottom: 5%;
+}
+
+.grey-button, .green-button, .transparent-button, .white-button {
+  width: 50%;
+  border-radius: 60px;
+  padding: 1%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.white-button {
+  border: none;
+  background-color: #FFFFFF;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.transparent-button {
+  letter-spacing: 2.5px;
+  border: 1px solid #FFFFFF;
+  color: #FFFFFF;
+  font-size: 12pt;
+}
+
+.green-button {
+  color: #FFFFFF;
+  padding: 3%;
+  background-image: linear-gradient(to bottom, #FFFFFF -200%, #539074 50%, #FFFFFF 500%);
+  box-shadow: 0px 15px 20px #539074;
+}
+
+.grey-button {
+  width: 100%;
+  border: 1px solid rgba(164, 185, 192, 0.3294117647);
+}
+
+.green-button:hover {
+  transform: translateY(-7px);
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  -webkit-transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  -moz-transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  -ms-transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  -o-transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  background: #FFFFFF;
+  color: #030303;
+  box-shadow: 0px 15px 20px #FFFFFF;
+  cursor: pointer;
+}
+
+.green-button:hover > .icon-arrow {
+  filter: invert(0%) sepia(0%) saturate(7483%) hue-rotate(139deg) brightness(98%) contrast(97%);
+}
+
+.icon {
+  width: 8%;
+  height: 8%;
+  margin-right: 3%;
+  align-items: center;
+  align-content: center;
+  display: flex;
+}
+
+.icon-image {
+  width: 100%;
+  height: 100%;
+}
+
+.icon-arrow {
+  width: 8%;
+  height: 8%;
+  margin-left: 3%;
+  margin-right: 0;
+  transform: rotate(-45deg);
+  filter: invert(90%) sepia(21%) saturate(206%) hue-rotate(150deg) brightness(79%) contrast(87%);
+}
+
+.menu-text {
+  font-family: "Golos";
+  font-size: 14pt;
+  color: #030303;
+}
+
+.big-text {
+  font-family: "Druk";
+  font-size: 30pt;
+  color: #FFFFFF;
+  line-height: 37pt;
+}
+
+.big-text-green {
+  color: #539074;
+}
+
+.main-text {
+  font-family: "Golos";
+  font-size: 12pt;
+  color: #FFFFFF;
+}
+
+.content-container__nav-menu__nav-bar {
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content-container__nav-menu__nav-bar__logo {
+  font-family: "Druk";
+  font-size: 14pt;
+  color: #FFFFFF;
+}
+
+.content-container__nav-menu__nav-bar__telephone {
+  max-width: 17%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-container__start-block {
+  background: linear-gradient(135deg, rgba(80, 201, 171, 0.13), rgba(84, 147, 131, 0.258)), url("/assets/img/house.jpg");
+  background-repeat: no-repeat;
+  background-attachment: initial;
+  background-position: center;
+  background-size: cover;
+  box-shadow: 150px -50px 200px 62px rgb(3, 3, 3) inset;
+}
+
+.about-us-container {
+  padding-top: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.content-container__about-us-block__info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.content-container__about-us-block__info__content {
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+}
+
+.content-container__about-us-block__info__content__list__items > li {
+  margin-left: 3%;
+}
+
+.content-container__about-us-block__info__content__list__items__icon {
+  max-width: 5vw;
+}
+
+.content-container__about-us-block__info__content__main-text {
+  margin-top: 5%;
+}
+
+.about-us-img {
+  padding: 0.3rem 1rem 0.3rem 1rem;
+  width: 80%;
+}
+
+.content-container__about-us-block__info__img-block__grid__item2 {
+  margin-top: 3%;
+  margin-left: 3%;
+}
+
+.grid_item {
+  height: 45vh;
+  width: 17vw;
+  border: none;
+}
+
+.grid_item img {
+  width: 100%;
+  height: 100%;
+  border-radius: 40px;
+}
+
+.second-grid-item {
+  margin-top: 5%;
+}/*# sourceMappingURL=style.css.map */
