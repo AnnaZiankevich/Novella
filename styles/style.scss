@@ -30,7 +30,8 @@ $item-offset: 3%;
 //--------------------------------------WH--------------------------------------------
 $icon-size: 8%;
 $container-size: 50rem;
-$green-button-transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+$hover-easing: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+$return-easing: cubic-bezier(0.445, 0.05, 0.55, 0.95);
 //-----------------------------------------------------------------------------------
  
 $baseurl : "/assets/img/";
@@ -126,15 +127,20 @@ ul {
 
 .green-button:hover{
   transform: translateY(-7px);
-  transition: $green-button-transition;
-  -webkit-transition: $green-button-transition;
-  -moz-transition: $green-button-transition;
-  -ms-transition: $green-button-transition;
-  -o-transition: $green-button-transition;
+  transition: $hover-easing;
+  -webkit-transition: $hover-easing;
+  -moz-transition: $hover-easing;
+  -ms-transition: $hover-easing;
+  -o-transition: $hover-easing;
   background: $accent-color;
   color: $back-color;
   box-shadow: 0px 15px 20px $accent-color;
   cursor: pointer;
+}
+
+.green-button::after {
+  transform: translateY(100%);
+  transition: $return-easing;
 }
 
 .green-button:hover > .icon-arrow {
@@ -285,15 +291,25 @@ ul {
 }
 
 .grid_item {
-  height: 45vh;
-  width: 17vw;
-  border: none;
-}
+  & {
+    height: 45vh;
+    width: 17vw;
+    border-radius: 40px;
+    border: none;
+    overflow: hidden;
+  }
 
-.grid_item img {
-  width: 100%;
-  height: 100%;
-  border-radius: 40px;
+  img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+  }
+
+  img:hover {
+    transition: transform 400ms ease-out;
+    transform: scale(1.15);
+  }
 }
 
 .second-grid-item {
@@ -302,8 +318,11 @@ ul {
 
 //-----------------------------------------------------------------------------------------------------------------------------
 
+//--------------------------------------------------------About-us-------------------------------------------------------------
 
 
+
+//-----------------------------------------------------------------------------------------------------------------------------
 
 
 //***************************************************************************************************************************
