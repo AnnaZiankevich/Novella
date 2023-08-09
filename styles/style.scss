@@ -35,7 +35,7 @@ $return-easing: cubic-bezier(0.445, 0.05, 0.55, 0.95);
 //-----------------------------------------------------------------------------------
  
 $baseurl : "/assets/img/";
-
+$main-border-radius: 40px;
 
 /******************************************************MAIN*******************************************************************/
 
@@ -294,7 +294,7 @@ ul {
   & {
     height: 45vh;
     width: 17vw;
-    border-radius: 40px;
+    border-radius: $main-border-radius;
     border: none;
     overflow: hidden;
   }
@@ -329,6 +329,51 @@ ul {
   @extend %content;
   margin-top: $content-offset;
 }
+
+//***************Slider********************
+
+.slider-item {
+  width: 30rem;
+  height: 25rem;
+}
+
+.slider-item__item-body {
+  width: 100%;
+  height: 100%;
+  padding: $content-offset;
+  border-radius: $main-border-radius;
+  background-image: url($baseurl + "/service/forest.jpg");
+  background-repeat: no-repeat;
+  background-attachment: initial;
+  background-position: center;
+  background-size: cover;
+}
+
+.slider-item__item-body__content {
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.slider-item__item-body__content__logo{
+ font-family: $family-druk;
+}
+
+.slider-item__item-body__content__desc-block {
+  width: 60%;
+}
+
+.slider-item__item-body__content__desc-block__item-name {
+  font-size: $second-font-size;
+}
+
+.slider-item__item-body__content__desc-block__item-description {
+  margin-top: $item-offset;
+}
+
+//******************************************
 
 //-----------------------------------------------------------------------------------------------------------------------------
 

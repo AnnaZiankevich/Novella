@@ -247,4 +247,45 @@ ul {
 
 .content-container__services-block {
   margin-top: 5%;
+}
+
+.slider-item {
+  width: 30rem;
+  height: 25rem;
+}
+
+.slider-item__item-body {
+  width: 100%;
+  height: 100%;
+  padding: 5%;
+  border-radius: 40px;
+  background-image: url("/assets/img//service/forest.jpg");
+  background-repeat: no-repeat;
+  background-attachment: initial;
+  background-position: center;
+  background-size: cover;
+}
+
+.slider-item__item-body__content {
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.slider-item__item-body__content__logo {
+  font-family: "Druk";
+}
+
+.slider-item__item-body__content__desc-block {
+  width: 60%;
+}
+
+.slider-item__item-body__content__desc-block__item-name {
+  font-size: 14pt;
+}
+
+.slider-item__item-body__content__desc-block__item-description {
+  margin-top: 3%;
 }/*# sourceMappingURL=style.css.map */
