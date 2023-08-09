@@ -247,9 +247,9 @@ ul {
 
 //--------------------------------------------------------About-us-------------------------------------------------------------
 
-.about-us-container {
+.content-container__about-us-block {
   @extend %content;
-  //margin-top: $content-offset;
+  margin-top: $content-offset;
   padding-top: 0;
   display: flex;
   flex-wrap: wrap;
@@ -316,11 +316,19 @@ ul {
   margin-top: $content-offset;
 }
 
+.content-container__services-block__info-block {
+  justify-content: space-between;
+  align-items: center;
+}
+
 //-----------------------------------------------------------------------------------------------------------------------------
 
 //--------------------------------------------------------About-us-------------------------------------------------------------
 
-
+.content-container__services-block {
+  @extend %content;
+  margin-top: $content-offset;
+}
 
 //-----------------------------------------------------------------------------------------------------------------------------
 
