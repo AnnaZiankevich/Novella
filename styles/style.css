@@ -23,7 +23,7 @@ ul {
   padding: 0;
 }
 
-.content-container__services-block, .content-container__about-us-block, .content-container__start-block {
+.services-block, .about-us-block, .start-block {
   width: 100%;
   height: 100vh;
   align-items: center;
@@ -165,26 +165,30 @@ ul {
   color: #FFFFFF;
 }
 
-.content-container__nav-menu__nav-bar {
+.start-block__nav-bar {
   width: 100%;
   justify-content: space-between;
   align-items: center;
 }
+.start-block__nav-bar li:nth-child(2) {
+  font-size: 12px;
+  width: 20%;
+}
 
-.content-container__nav-menu__nav-bar__logo {
+.start-block__logo {
   font-family: "Druk";
   font-size: 14pt;
   color: #FFFFFF;
 }
 
-.content-container__nav-menu__nav-bar__telephone {
+.start-block__telephone {
   max-width: 17%;
   text-align: center;
   justify-content: center;
   align-items: center;
 }
 
-.content-container__start-block {
+.start-block {
   background: linear-gradient(135deg, rgba(80, 201, 171, 0.13), rgba(84, 147, 131, 0.258)), url("/assets/img/house.jpg");
   background-repeat: no-repeat;
   background-attachment: initial;
@@ -193,7 +197,7 @@ ul {
   box-shadow: 150px -50px 200px 62px rgb(3, 3, 3) inset;
 }
 
-.content-container__about-us-block {
+.about-us-block {
   margin-top: 5%;
   padding-top: 0;
   display: flex;
@@ -201,56 +205,56 @@ ul {
   align-items: center;
 }
 
-.content-container__about-us-block__info {
+.about-us-block__info {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.content-container__about-us-block__info__content {
+.about-us-block__content {
   margin-top: 0;
   display: flex;
   align-items: center;
 }
 
-.content-container__about-us-block__info__content__list__items {
+.about-us-block__items {
   width: 80%;
   justify-content: space-between;
 }
 
-.content-container__about-us-block__info__content__list__items__icon {
+.about-us-block__item-icon {
   max-width: 4.5vw;
 }
 
-.content-container__about-us-block__info__content__main-text {
+.about-us-block__main-text {
   margin-top: 5%;
 }
 
-.about-us-img {
+.about-us__image {
   padding: 0.3rem 0.7rem;
   width: 70%;
   min-height: 100%;
 }
 
-.content-container__about-us-block__info__img-block__grid__item2 {
+.about-us-block__grid--second-item {
   margin-top: 3%;
   margin-left: 3%;
 }
 
-.grid_item {
+.about-us-block__grid-item {
   height: 45vh;
   width: 17vw;
   border-radius: 40px;
   border: none;
   overflow: hidden;
 }
-.grid_item img {
+.about-us-block__grid-item img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.grid_item img:hover {
+.about-us-block__grid-item img:hover {
   transition: transform 400ms ease-out;
   transform: scale(1.15);
 }
@@ -259,16 +263,20 @@ ul {
   margin-top: 5%;
 }
 
-.content-container__services-block__info-block {
+.services-block {
+  margin-top: 5%;
+}
+
+.services-block__info-block {
   justify-content: space-between;
   align-items: center;
 }
 
-.content-container__services-block {
-  margin-top: 5%;
+.services-block__main-text > p {
+  padding-top: 5%;
 }
 
-.slider-body {
+.services-block__slider-body {
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row;
@@ -276,11 +284,11 @@ ul {
   align-items: center;
   overflow: hidden;
 }
-.slider-body .slider-item:first-child {
+.services-block__slider-body div:first-child {
   margin-left: 0;
 }
 
-.slider-item {
+.services-block__slider-item {
   max-width: 30rem;
   min-width: 15rem;
   height: 25rem;
@@ -288,7 +296,7 @@ ul {
   margin-left: 5%;
 }
 
-.slider-item__item-body {
+.services-block__item-body {
   width: 100%;
   height: 100%;
   padding: 20px;
@@ -298,18 +306,17 @@ ul {
   background-position: center;
   background-size: cover;
 }
-
-.slider-item__item-body#item1 {
+.services-block__item-body#item1 {
   background-image: url("/assets/img//service//forest.jpg");
 }
-.slider-item__item-body#item2 {
+.services-block__item-body#item2 {
   background-image: url("/assets/img//service//pool.jpg");
 }
-.slider-item__item-body#item3 {
+.services-block__item-body#item3 {
   background-image: url("/assets/img//service//food.jpg");
 }
 
-.slider-item__item-body__content {
+.services-block__slider-content {
   width: 100%;
   height: 100%;
   flex-direction: column;
@@ -317,7 +324,7 @@ ul {
   justify-content: space-between;
 }
 
-.slider-item__item-body__content__button {
+.services-block__slider-button--green {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -325,18 +332,18 @@ ul {
   justify-content: center;
 }
 
-.slider-item__item-body__content__logo {
+.services-block__content-logo {
   font-family: "Druk";
 }
 
-.slider-item__item-body__content__desc-block {
+.services-block__description {
   width: 70%;
 }
 
-.slider-item__item-body__content__desc-block__item-name {
+.services-block__item-name {
   font-size: 14pt;
 }
 
-.slider-item__item-body__content__desc-block__item-description {
+.services-block__item-description {
   margin-top: 3%;
 }/*# sourceMappingURL=style.css.map */

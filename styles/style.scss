@@ -229,19 +229,24 @@ ul {
 
 //-------------------------------------------------------Nav-menu--------------------------------------------------------------
 
-.content-container__nav-menu__nav-bar {
+.start-block__nav-bar {
   width: 100%;
   justify-content: space-between;
   align-items: center;
+
+  & li:nth-child(2) {
+    font-size: 12px; 
+    width: 20%;
+  }
 }
 
-.content-container__nav-menu__nav-bar__logo {
+.start-block__logo {
   font-family: $family-druk;
   font-size: $second-font-size;
   color: $accent-color;
 }
 
-.content-container__nav-menu__nav-bar__telephone {
+.start-block__telephone {
   max-width: 17%;
   text-align: center;
   justify-content: center;
@@ -252,7 +257,7 @@ ul {
 
 //-----------------------------------------------------Start-block-------------------------------------------------------------
 
-.content-container__start-block {
+.start-block {
   @extend %content;
    background: linear-gradient(135deg, rgba(80, 201, 171, 0.13), rgba(84, 147, 131, 0.258)), 
                url($base-url + "house.jpg");
@@ -270,7 +275,7 @@ ul {
 
 //--------------------------------------------------------About-us-------------------------------------------------------------
 
-.content-container__about-us-block {
+.about-us-block {
   @extend %content;
   margin-top: $content-offset;
   padding-top: 0;
@@ -279,43 +284,43 @@ ul {
   align-items: center;
 }
 
-.content-container__about-us-block__info {
+.about-us-block__info {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.content-container__about-us-block__info__content {
+.about-us-block__content {
   margin-top: 0;
   display: flex;
   align-items: center;
 }
 
-.content-container__about-us-block__info__content__list__items {
+.about-us-block__items {
   width: 80%;
   justify-content: space-between;
 }
 
-.content-container__about-us-block__info__content__list__items__icon {
+.about-us-block__item-icon {
   max-width: 4.5vw;
 }
 
-.content-container__about-us-block__info__content__main-text {
+.about-us-block__main-text {
   margin-top: $content-offset;
 }
 
-.about-us-img {
+.about-us__image {
   padding: 0.3rem 0.7rem;
   width: 70%;
   min-height: 100%;
 }
 
-.content-container__about-us-block__info__img-block__grid__item2 {
+.about-us-block__grid--second-item {
   margin-top: $item-offset;
   margin-left: $item-offset;
 }
 
-.grid_item {
+.about-us-block__grid-item {
   & {
     height: 45vh;
     width: 17vw;
@@ -341,23 +346,27 @@ ul {
   margin-top: $content-offset;
 }
 
-.content-container__services-block__info-block {
-  justify-content: space-between;
-  align-items: center;
-}
-
 //-----------------------------------------------------------------------------------------------------------------------------
 
-//--------------------------------------------------------About-us-------------------------------------------------------------
+//--------------------------------------------------------Services-------------------------------------------------------------
 
-.content-container__services-block {
+.services-block {
   @extend %content;
   margin-top: $content-offset;
 }
 
+.services-block__info-block {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.services-block__main-text > p {
+  padding-top: $content-offset;
+}
+
 //***************Slider********************
 
-.slider-body {
+.services-block__slider-body {
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row;
@@ -365,12 +374,12 @@ ul {
   align-items: center;
   overflow: hidden;
 
-  & .slider-item:first-child {
+  & div:first-child {
     margin-left: 0;
   }
 }
 
-.slider-item {
+.services-block__slider-item {
   max-width: 30rem;
   min-width: 15rem;
   height: 25rem;
@@ -378,7 +387,7 @@ ul {
   margin-left: $content-offset;
 }
 
-.slider-item__item-body {
+.services-block__item-body {
   width: 100%;
   height: 100%;
   padding: 20px;
@@ -387,9 +396,7 @@ ul {
   background-attachment: initial;
   background-position: center;
   background-size: cover;
-}
 
-.slider-item__item-body{
   &#item1{
     background-image: url($service-url + "/forest.jpg");
   }
@@ -403,7 +410,7 @@ ul {
   }
 }
 
-.slider-item__item-body__content {
+.services-block__slider-content{
   width: 100%;
   height: 100%;
   flex-direction: column;
@@ -411,7 +418,7 @@ ul {
   justify-content: space-between;
 }
 
-.slider-item__item-body__content__button {
+.services-block__slider-button--green {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -419,19 +426,19 @@ ul {
   justify-content: center;
 }
 
-.slider-item__item-body__content__logo{
+.services-block__content-logo{
  font-family: $family-druk;
 }
 
-.slider-item__item-body__content__desc-block {
+.services-block__description {
   width: 70%;
 }
 
-.slider-item__item-body__content__desc-block__item-name {
+.services-block__item-name {
   font-size: $second-font-size;
 }
 
-.slider-item__item-body__content__desc-block__item-description {
+.services-block__item-description {
   margin-top: $item-offset;
 }
 
