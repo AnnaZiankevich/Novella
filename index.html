@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NOVELLA - прикоснись к природе</title>
     <link rel="stylesheet" id="bootstrap-css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css?ver=6.2">
+    <link rel="stylesheet" id="owl-carousel" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" id="owl-carousel" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
     <link rel="stylesheet" href="styles/style.css">
 </head>
 
@@ -147,11 +149,19 @@
                 </div>
                 <div class="services-block__slider-block">
                     <div class="services-block__slider-buttons">
+                        <script>
+                            $(".next_button").click(function(){
+                              owl.trigger("next.owl.carousel");
+                            });
 
+                            $(".prev_button").click(function(){
+                              owl.trigger("prev.owl.carousel");
+                            });
+                        </script>
                     </div>
 
-                    <div class="services-block__slider-body">
-                        <div class="services-block__slider-item option active">
+                    <div class="services-block__slider-body owl-carousel">
+                        <div class="services-block__slider-item active">
                             <div class="services-block__item-body" id="item1">
                                 <div class="services-block__slider-content main-text d-flex">
                                     <div class="services-block__content-logo">
@@ -176,7 +186,7 @@
                             </div>
                         </div>
 
-                        <div class="services-block__slider-item option active">
+                        <div class="services-block__slider-item">
                             <div class="services-block__item-body" id="item2">
                                 <div class="services-block__slider-content main-text d-flex">
                                     <div class="services-block__content-logo">
@@ -202,7 +212,7 @@
                             </div>
                         </div>
 
-                        <div class="services-block__slider-item option active">
+                        <div class="services-block__slider-item">
                             <div class="services-block__item-body" id="item3">
                                 <div class="services-block__slider-content main-text d-flex">
                                     <div class="services-block__content-logo">
@@ -226,6 +236,163 @@
                                     </div>
                                 </div>
                             </div>
+                        </div>   
+
+                        <div class="services-block__slider-item">
+                            <div class="services-block__item-body" id="item4">
+                                <div class="services-block__slider-content main-text d-flex">
+                                    <div class="services-block__content-logo">
+                                        NOVELLA
+                                    </div>
+                                    <div class="services-block__slider-button--green">
+                                        <div class="services-block__button-body slider-item-button">
+                                            <div class="services-block__button-description">
+                                                &#43;
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="services-block__description">
+                                        <div class="services-block__item-name text-uppercase">
+                                            <strong>Восхождение на вершины</strong>
+                                        </div>
+                                        <div class="services-block__item-description">
+                                            Отправьтесь в путешествие в горы и насладитесь живописными пейзажами и незабываемыми приключениями.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="services-block__slider-item">
+                            <div class="services-block__item-body" id="item5">
+                                <div class="services-block__slider-content main-text d-flex">
+                                    <div class="services-block__content-logo">
+                                        NOVELLA
+                                    </div>
+                                    <div class="services-block__slider-button--green">
+                                        <div class="services-block__button-body slider-item-button">
+                                            <div class="services-block__button-description">
+                                                &#43;
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="services-block__description">
+                                        <div class="services-block__item-name text-uppercase">
+                                            <strong>Прикосновение к природе</strong>
+                                        </div>
+                                        <div class="services-block__item-description">
+                                            Откройте для себя красоту леса и окружающей природы, познакомтесь с культурой и 
+                                                                                                                    историей местности
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="services-block__slider-item option">
+                            <div class="services-block__item-body" id="item6">
+                                <div class="services-block__slider-content main-text d-flex">
+                                    <div class="services-block__content-logo">
+                                        NOVELLA
+                                    </div>
+                                    <div class="services-block__slider-button--green">
+                                        <div class="services-block__button-body slider-item-button">
+                                            <div class="services-block__button-description">
+                                                &#43;
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="services-block__description">
+                                        <div class="services-block__item-name text-uppercase">
+                                            <strong>Фитнес зал</strong>
+                                        </div>
+                                        <div class="services-block__item-description">
+                                            Поддерживайте свою форму в нашем фитнес-зале с помощью разнообразных занятий, а также пеших 
+                                                                    прогулок, велосипедных поездок, водных видов спорта и многое другое.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="services-block__slider-item option">
+                            <div class="services-block__item-body" id="item7">
+                                <div class="services-block__slider-content main-text d-flex">
+                                    <div class="services-block__content-logo">
+                                        NOVELLA
+                                    </div>
+                                    <div class="services-block__slider-button--green">
+                                        <div class="services-block__button-body slider-item-button">
+                                            <div class="services-block__button-description">
+                                                &#43;
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="services-block__description">
+                                        <div class="services-block__item-name text-uppercase">
+                                            <strong>Свой паркинг</strong>
+                                        </div>
+                                        <div class="services-block__item-description">
+                                            Мы предоставляем свой собственный паркинг, чтобы вы могли путешествовать с 
+                                                                            комфортом, зная, что ваш автомобиль в безопасности.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>   
+                        
+                        <div class="services-block__slider-item">
+                            <div class="services-block__item-body" id="item8">
+                                <div class="services-block__slider-content main-text d-flex">
+                                    <div class="services-block__content-logo">
+                                        NOVELLA
+                                    </div>
+                                    <div class="services-block__slider-button--green">
+                                        <div class="services-block__button-body slider-item-button">
+                                            <div class="services-block__button-description">
+                                                &#43;
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="services-block__description">
+                                        <div class="services-block__item-name text-uppercase">
+                                            <strong>Сауны и бани</strong>
+                                        </div>
+                                        <div class="services-block__item-description">
+                                            Раскройте свои чувства в наших саунах и банях, где вы сможете расслабиться, 
+                                                                                    очиститься и насладиться теплом и уютом.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="services-block__slider-item">
+                            <div class="services-block__item-body" id="item9">
+                                <div class="services-block__slider-content main-text d-flex">
+                                    <div class="services-block__content-logo">
+                                        NOVELLA
+                                    </div>
+                                    <div class="services-block__slider-button--green">
+                                        <div class="services-block__button-body slider-item-button">
+                                            <div class="services-block__button-description">
+                                                &#43;
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="services-block__description">
+                                        <div class="services-block__item-name text-uppercase">
+                                            <strong>Спа-процедуры</strong>
+                                        </div>
+                                        <div class="services-block__item-description">
+                                            Позвольте себе нежные и роскошные спа-процедуры в нашем спа-центре, где вас ждут 
+                                                массажи, ароматерапия и другие процедуры, чтобы восстановить и омолодить ваше 
+                                                                                                                тело и душу.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
                     </div>
                 </div>
@@ -244,9 +411,11 @@
 
     <script src="scripts/app.js"></script>
 
+    <script text="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script text="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script text="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="scripts/index.js"></script>
-    <script src="scripts/expand.js"></script>
+    <script src="scripts/slider.js"></script>
     <script src="node/index.js"></script>
     <script type="text/babel" src="scripts/index.jsx"></script>
     
