@@ -27,13 +27,11 @@ $block-offset: 15%;
 $item-offset: 3%;
 //------------------------------------------------------------------------------------
 
-//--------------------------------------WH--------------------------------------------
+//--------------------------------------Other--------------------------------------------
 $icon-size: 8%;
 $container-size: 50rem;
 $hover-easing: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
-$return-easing: cubic-bezier(0.445, 0.05, 0.55, 0.95);
-//-----------------------------------------------------------------------------------
- 
+$return-easing: cubic-bezier(0.445, 0.05, 0.55, 0.95); 
 $base-url : "/assets/img/";
 $service-url : $base-url + "/service/";
 $main-border-radius: 40px;
@@ -93,6 +91,7 @@ ul {
   text-align: center;
   justify-content: center;
   align-items: center;
+  display: flex;
 }
 
 .white-button {
@@ -120,7 +119,7 @@ ul {
   box-shadow: 0px 15px 20px $base-color;
 }
 
-.grey-button {
+.gray-button {
   @extend %button;
   width: 100%;
   border: 1px solid #a4b9c054;
@@ -176,6 +175,7 @@ ul {
 .icon {
   width: $icon-size;
   height: $icon-size;
+  
   margin-right: $item-offset;
   align-items: center; 
   align-content: center; 
@@ -190,6 +190,7 @@ ul {
 .icon-arrow {
   width: $icon-size;
   height: $icon-size;
+
   margin-left: $item-offset;
   margin-right: 0;
   transform: rotate(-45deg);
@@ -290,12 +291,13 @@ ul {
   align-items: center;
 }
 
-.content-container__about-us-block__info__content__list__items > li {
-  margin-left: $item-offset;
+.content-container__about-us-block__info__content__list__items {
+  width: 80%;
+  justify-content: space-between;
 }
 
 .content-container__about-us-block__info__content__list__items__icon {
-  max-width: 5vw;
+  max-width: 4.5vw;
 }
 
 .content-container__about-us-block__info__content__main-text {
@@ -303,8 +305,9 @@ ul {
 }
 
 .about-us-img {
-  padding: 0.3rem 1rem 0.3rem 1rem;
-  width: 80%;
+  padding: 0.3rem 0.7rem;
+  width: 70%;
+  min-height: 100%;
 }
 
 .content-container__about-us-block__info__img-block__grid__item2 {
@@ -361,6 +364,10 @@ ul {
   justify-content: center;
   align-items: center;
   overflow: hidden;
+
+  & .slider-item:first-child {
+    margin-left: 0;
+  }
 }
 
 .slider-item {
@@ -382,16 +389,18 @@ ul {
   background-size: cover;
 }
 
-.slider-item__item-body#item1{
-  background-image: url($service-url + "/forest.jpg");
-}
+.slider-item__item-body{
+  &#item1{
+    background-image: url($service-url + "/forest.jpg");
+  }
 
-.slider-item__item-body#item2{
-  background-image: url($service-url + "/pool.jpg");
-}
+  &#item2{
+    background-image: url($service-url + "/pool.jpg");
+  }
 
-.slider-item__item-body#item3{
-  background-image: url($service-url + "/food.jpg");
+  &#item3{
+    background-image: url($service-url + "/food.jpg");
+  }
 }
 
 .slider-item__item-body__content {
@@ -409,8 +418,6 @@ ul {
   align-items: baseline;
   justify-content: center;
 }
-
-
 
 .slider-item__item-body__content__logo{
  font-family: $family-druk;

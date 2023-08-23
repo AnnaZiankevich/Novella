@@ -44,13 +44,14 @@ ul {
   margin-bottom: 5%;
 }
 
-.slider-item-button, .grey-button, .green-button, .transparent-button, .white-button {
+.slider-item-button, .gray-button, .green-button, .transparent-button, .white-button {
   width: 50%;
   border-radius: 60px;
   padding: 1%;
   text-align: center;
   justify-content: center;
   align-items: center;
+  display: flex;
 }
 
 .white-button {
@@ -75,7 +76,7 @@ ul {
   box-shadow: 0px 15px 20px #539074;
 }
 
-.grey-button {
+.gray-button {
   width: 100%;
   border: 1px solid rgba(164, 185, 192, 0.3294117647);
 }
@@ -212,12 +213,13 @@ ul {
   align-items: center;
 }
 
-.content-container__about-us-block__info__content__list__items > li {
-  margin-left: 3%;
+.content-container__about-us-block__info__content__list__items {
+  width: 80%;
+  justify-content: space-between;
 }
 
 .content-container__about-us-block__info__content__list__items__icon {
-  max-width: 5vw;
+  max-width: 4.5vw;
 }
 
 .content-container__about-us-block__info__content__main-text {
@@ -225,8 +227,9 @@ ul {
 }
 
 .about-us-img {
-  padding: 0.3rem 1rem 0.3rem 1rem;
-  width: 80%;
+  padding: 0.3rem 0.7rem;
+  width: 70%;
+  min-height: 100%;
 }
 
 .content-container__about-us-block__info__img-block__grid__item2 {
@@ -273,6 +276,9 @@ ul {
   align-items: center;
   overflow: hidden;
 }
+.slider-body .slider-item:first-child {
+  margin-left: 0;
+}
 
 .slider-item {
   max-width: 30rem;
@@ -296,11 +302,9 @@ ul {
 .slider-item__item-body#item1 {
   background-image: url("/assets/img//service//forest.jpg");
 }
-
 .slider-item__item-body#item2 {
   background-image: url("/assets/img//service//pool.jpg");
 }
-
 .slider-item__item-body#item3 {
   background-image: url("/assets/img//service//food.jpg");
 }
