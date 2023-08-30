@@ -52,6 +52,7 @@ ul {
   justify-content: center;
   align-items: center;
   display: flex;
+  cursor: pointer;
 }
 
 .white-button {
@@ -63,8 +64,9 @@ ul {
 }
 
 .transparent-button {
+  display: inline-flex;
   letter-spacing: 2.5px;
-  border: 1px solid #FFFFFF;
+  border: 0.1px solid #FFFFFF;
   color: #FFFFFF;
   font-size: 12pt;
 }
@@ -152,7 +154,7 @@ ul {
   font-family: "Druk";
   font-size: 30pt;
   color: #FFFFFF;
-  line-height: 37pt;
+  line-height: 41pt;
 }
 
 .big-text-green {
@@ -430,5 +432,22 @@ ul {
 }
 
 .presentation-block__content {
-  width: 50%;
+  width: 60%;
+}
+
+.presentation-block__play-button {
+  width: 20%;
+  height: 50px;
+  margin: 0;
+  text-decoration: none;
+}
+
+.presentation-block__button-content {
+  width: 70%;
+  justify-content: space-around;
+  align-items: center;
+}
+.presentation-block__button-content img {
+  width: 20%;
+  height: 20%;
 }/*# sourceMappingURL=style.css.map */
