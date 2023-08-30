@@ -386,6 +386,10 @@ ul {
   transform: translateY(0);
 }
 
+.btn-active {
+  display: none;
+}
+
 .services-block__description {
   width: 80%;
   z-index: 1;
