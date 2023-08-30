@@ -355,7 +355,7 @@ ul {
   margin-top: $content-offset;
 }
 
-.services-block__info-block {
+.services-block__info {
   justify-content: space-between;
   align-items: center;
 }
@@ -519,5 +519,32 @@ ul {
 
 //-----------------------------------------------------------------------------------------------------------------------------
 
+//------------------------------------------------------Presentation-----------------------------------------------------------
+
+.presentation-block {
+  @extend %content;
+  height: 60vh;
+  background: linear-gradient(135deg, rgba(2, 3, 3, 0.705), rgba(0, 0, 0, 0.705)), 
+               url($base-url + "house5.jpg");
+  //background-image: url($base-url + "house.jpg");
+  background-repeat: no-repeat;
+  background-attachment: initial;
+  background-position: center;
+  background-size: cover;
+}
+
+.presentation-block__info {
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.presentation-block__content {
+  width: 50%;
+}
+
+//-----------------------------------------------------------------------------------------------------------------------------
 
 //***************************************************************************************************************************
