@@ -547,10 +547,6 @@ ul {
   width: 60%;
 }
 
-// .presentation-block__text {
-//   line-height: ;
-// }
-
 .presentation-block__play-button {
     width: 20%;
     height: 50px;
@@ -570,6 +566,71 @@ ul {
     height: 20%;
   }
 }
+
+//-----------------------------------------------------------------------------------------------------------------------------
+
+//------------------------------------------------------Contact-form-----------------------------------------------------------
+
+.contact-form-block {
+  @extend %content;
+  height: 80vh;
+  background: url($base-url + "jungle_1.jpg");
+  background-repeat: no-repeat;
+  background-attachment: initial;
+  background-position: center;
+  background-size: cover;
+}
+
+.contact-form-block__info-text > :nth-child(n+2) {
+    font-size: 25pt;
+  }
+
+.contact-form-block__form-content {
+  height: 100%;
+}
+
+.input{
+  position: relative;
+  width: 90%;
+  margin: 15px auto;
+  display: inline-flex;
+  align-items: center;
+  
+  span{
+    position: absolute;
+    display: block;
+    color: darken($gradient-color, 10%);
+    left: 25px;
+    font-size: 20px;
+  }
+  
+  input{
+    width: 100%;
+    padding: 25px 5px 25px 40px;
+    display: block;
+    background-color: #F6F6F6;
+    // background-color: lighten($gradient-color, 30%);
+    border: 2px solid $gradient-color;
+    border-radius: $main-border-radius;
+    transition: 0.2s ease-out;
+    color: darken($gradient-color, 30%);
+    
+    // &::placeholder {
+    //   padding-left: 20px;
+    // }
+
+    &:focus{
+      padding: 25px 5px 25px 25px;
+      outline: 0;
+      border-color: $base-color;
+    }
+  }
+}
+
+.form-check-label > a{
+  color: $accent-color;
+}
+
 
 //-----------------------------------------------------------------------------------------------------------------------------
 
