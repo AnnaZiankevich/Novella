@@ -634,7 +634,7 @@ ul {
 .contact-form-block__form-content {
   background-color: $accent-color;
   border-radius: $main-border-radius;
-  padding: 10px 20px;
+  padding: 50px 30px;
   height: 100%;
 }
 
@@ -666,25 +666,38 @@ fieldset > div {
     padding: 25px 5px 25px 50px;
     display: block;
     background-color: #F6F6F6;
-    border: 2px solid $gradient-color;
+    border: 2px solid #b8b8b82d; 
     border-radius: $main-border-radius;
     transition: 0.2s ease-out;
-    color: darken($gradient-color, 30%);
-    
-    // &::placeholder {
-    //   padding-left: 20px;
-    // }
+    color: #a4b8c0;
 
     &:focus{
       padding: 25px 5px 25px 25px;
       outline: 0;
-      border-color: $base-color;
+      border-color: lighten($base-color, 40%);
+      background-color: lighten($base-color, 60%);
     }
   }
 }
 
-.form-check-label > a{
-  color: $accent-color;
+.contact-form-block__form-text1, .contact-form-block__form-text2  {
+  @extend %bmain-text !optional;
+  color: $back-color;
+  text-align: center;
+  font-size: 24px;
+}
+
+.contact-form-block__form-text2 {
+  font-size: 18px;
+}
+
+.form-check-label {
+  color: darken($gradient-color, 10%);
+  font-size: 0.7rem;
+
+  & > a {
+  color: darken($gradient-color, 10%);;
+  }
 }
 
 

@@ -491,7 +491,7 @@ ul {
 .contact-form-block__form-content {
   background-color: #FFFFFF;
   border-radius: 40px;
-  padding: 10px 20px;
+  padding: 50px 30px;
   height: 100%;
 }
 
@@ -521,17 +521,32 @@ fieldset > div > :last-child {
   padding: 25px 5px 25px 50px;
   display: block;
   background-color: #F6F6F6;
-  border: 2px solid #A4B9C0;
+  border: 2px solid rgba(184, 184, 184, 0.1764705882);
   border-radius: 40px;
   transition: 0.2s ease-out;
-  color: #536f78;
+  color: #a4b8c0;
 }
 .input input:focus {
   padding: 25px 5px 25px 25px;
   outline: 0;
-  border-color: #539074;
+  border-color: #cde2d8;
+  background-color: white;
 }
 
+.contact-form-block__form-text1, .contact-form-block__form-text2 {
+  color: #030303;
+  text-align: center;
+  font-size: 24px;
+}
+
+.contact-form-block__form-text2 {
+  font-size: 18px;
+}
+
+.form-check-label {
+  color: #86a2ab;
+  font-size: 0.7rem;
+}
 .form-check-label > a {
-  color: #FFFFFF;
+  color: #86a2ab;
 }/*# sourceMappingURL=style.css.map */
