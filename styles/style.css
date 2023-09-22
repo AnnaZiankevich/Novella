@@ -6,11 +6,32 @@
   font-family: Druk;
   src: url("/assets/fonts/Druk Wide Bold.ttf");
 }
+.block {
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 5%;
+}
+
+.row {
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0;
+}
+.row > * {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 /******************************************************MAIN*******************************************************************/
 *,
 *:before,
 *:after {
+  -ms-box-sizing: border-box;
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
 body {
@@ -152,7 +173,7 @@ ul {
 
 .big-text {
   font-family: "Druk";
-  font-size: 30pt;
+  font-size: 35pt;
   color: #FFFFFF;
   line-height: 41pt;
 }
@@ -202,15 +223,6 @@ ul {
 .about-us-block {
   margin-top: 5%;
   padding-top: 0;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-.about-us-block__info {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 .about-us-block__content {
@@ -415,6 +427,7 @@ ul {
 }
 
 .presentation-block {
+  box-shadow: inset 0px 0px 250px #000, inset 0px 0px 250px #000, inset 0px 0px 250px #000;
   height: 60vh;
   background: linear-gradient(135deg, rgba(2, 3, 3, 0.705), rgba(0, 0, 0, 0.705)), url("/assets/img/house5.jpg");
   background-repeat: no-repeat;
@@ -453,6 +466,7 @@ ul {
 }
 
 .contact-form-block {
+  box-shadow: inset 0px 0px 250px #000, inset 0px 0px 250px #000, inset 0px 0px 250px #000;
   height: 80vh;
   background: url("/assets/img/jungle_1.jpg");
   background-repeat: no-repeat;
@@ -461,18 +475,36 @@ ul {
   background-size: cover;
 }
 
+.contact-form-block__info {
+  height: 100%;
+}
+
+.contact-form-block__content {
+  height: 70%;
+  align-items: center;
+}
+
 .contact-form-block__info-text > :nth-child(n+2) {
   font-size: 25pt;
 }
 
 .contact-form-block__form-content {
+  background-color: #FFFFFF;
+  border-radius: 40px;
+  padding: 10px 20px;
   height: 100%;
+}
+
+fieldset > div {
+  margin-bottom: 5%;
+}
+fieldset > div > :last-child {
+  margin-bottom: 0;
 }
 
 .input {
   position: relative;
-  width: 90%;
-  margin: 15px auto;
+  width: 100%;
   display: inline-flex;
   align-items: center;
 }
@@ -482,10 +514,11 @@ ul {
   color: #86a2ab;
   left: 25px;
   font-size: 20px;
+  padding-right: 20px;
 }
 .input input {
   width: 100%;
-  padding: 25px 5px 25px 40px;
+  padding: 25px 5px 25px 50px;
   display: block;
   background-color: #F6F6F6;
   border: 2px solid #A4B9C0;
